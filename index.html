@@ -5,42 +5,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="General content of the music world, cool facts and some recommendations of the newest artist for the users">
-    <meta name="keywords" content="music, artists, trends, recommendations, genres, MooodEr">
-    <script src="https://kit.fontawesome.com/e3225bf15b.js" crossorigin="anonymous">
-    </script>
-    <link rel="stylesheet" href="./css/landing.css">
-    <title>Mood.Er Inicio</title>
+    <link rel="stylesheet" href="./css/landingnocap.css">
+    <title>Mood.Er</title>
 </head>
 
 <body>
-    <!--Navbar Section-->
-    <nav class="navbar"><a href="/" class="navbar__logo">Mood.Er</a>
-        <div class="navbar__bars">
-            <i class="fas fa-bars"></i>
-        </div>
-        <div class="navbar__menu">
-            <a href="./contact.html" class="navbar__menu--links">Contact us</a>
-            <a href="./reco.html" class="navbar__menu--links">Mood.Er´s Recommendation</a>
-            <a href="file:///D:/Curso/CoolStories.html" class="navbar__menu--links">Merch</a>
-            <a href="./artists.html" class="navbar__menu--links" id="button">Artists</a>
-        </div>
-    </nav>
-    <!--Hero Section-->
-    <div class="hero">
-        <div class="hero__container">
-            <div class="hero__container--left">
-                <h1>Unlock the ultimate experience</h1>
-                <h2>The music world awaits</h2>
-                <p>¿Would you introduce yourself in it?</p>
-                <button class="hero__container--btn">
-                    <a href="./sign.html">Sign up, EXPLORE</a>
-                    </button>
-            </div>
-            <div class="hero__container--right">
-                <img src="./images/darkie.jpg" width="300" alt="Ysl album´s photo">
-            </div>
-        </div>
+    <header>
+        <img src="./images/pexels-snapwire-6966.jpg" alt="" class="banner">
+        <a href="" class="logo">Mood.Er</a>
+        <div class="toggle"></div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="./reco.html">Mood.Er´s Recommendation</a>
+                </li>
+                <li>
+                    <a href="./artists.html">Artists</a>
+                </li>
+                <li>
+                    <a href="./sign.html">Sign Up</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--contenido-->
+    <section>
+        <h2>What would u find here?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, porttitor per nisl pretium lobortis nec mauris, sem penatibus eu in congue vel. Felis per augue duis suspendisse lacus nam potenti, mauris facilisis fermentum tortor hac penatibus. Dui senectus
+            sodales est nullam mus porttitor taciti pulvinar, libero cum rutrum lacinia cubilia aenean tincidunt nec sociosqu, iaculis porta aptent aliquet purus fusce etiam. Porta varius congue orci mauris blandit aliquet sollicitudin facilisi fames,
+            justo tincidunt netus nec nullam cubilia consequat ultrices senectus hendrerit, eleifend sociosqu lectus lacinia convallis a eros mus. Placerat mi lobortis duis aliquam porta nascetur morbi interdum libero cursus faucibus, sociosqu quisque
+            mus habitasse metus dignissim blandit gravida odio. Fermentum conubia ullamcorper natoque enim dis eros magna molestie suscipit taciti est felis egestas, malesuada fames suspendisse potenti erat maecenas auctor mi eu fringilla cubilia.</p>
+    </section>
+    <!--contenido-->
+    <script>
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
+        });
+        const navigation = document.querySelector('nav');
+        document.querySelector('.toggle').onclick = function() {
+            this.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
