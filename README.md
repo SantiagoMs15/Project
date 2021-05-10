@@ -1,2 +1,2 @@
 # Project
-Hola
+Este es el intento de hacer un pequeño blog de música
